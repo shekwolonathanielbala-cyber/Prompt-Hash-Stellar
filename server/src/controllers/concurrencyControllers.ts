@@ -37,7 +37,7 @@ export const UpdateWithVersionCheck = async (
     }
 
     const { matched, modified } = await updateWithVersionCheck(
-      Model,
+      Model as any,
       { _id: recordId },
       update,
       expectedVersion,
